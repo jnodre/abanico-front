@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  min-width: 375px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: proxima-nova, sans-serif;
+  button {
+    cursor: pointer;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+    .header-image {
+      background-image: url(./images/girl.jpg);
+      background-position: top;
+      background-size: 130%;
+      height: 250px;
+
+      .zoom {
+        display: none;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 27px;
+        height: 27px;
+      }
+    }
+    .header__content-title {
+      background: rgb(2, 0, 36);
+      background: linear-gradient(#124285 0%, #0f376f 45%, #0c2a54 100%);
+      height: 210px;
+      padding: 20px 27px;
+    }
+    .header__content-button {
+      background: #c99b4f;
+      border: none;
+      font-weight: bold;
+      width: 201px;
+      height: 40px;
+      position: absolute;
+      top: 440px;
+      right: 12%;
+    }
+
+    .header__content-title--blue {
+      color: #2399d5;
+    }
+    .header__content-info {
+      background: #0a2244;
+      padding: 20px 0px 20px 27px;
+      font-size: 0.875em;
+    }
+    .header__content-info-flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .header__content-info p:first-of-type {
+      font-size: 1.715em;
+    }
+    .header__content-info-flex div {
+      flex: 0 50%;
+    }
+    .header__content-info-flex div p:first-of-type {
+      font-size: 1.287em;
+    }
+    .header__content-info-flex div:nth-child(1) p:first-of-type {
+      font-size: 1.715em;
+    }
+    .header__content-info-flex div:nth-child(2) p:first-of-type {
+      font-size: 1.715em;
+    }
+  }
+
+  .team-section {
+    background: linear-gradient(#0a1231 0%, #0a193a 45%, #092144 100%);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    .team-section__title {
+      width: 100%;
+      height: 90px;
+      font-size: 2.5em;
+      text-align: center;
+      background: linear-gradient(#124285 0%, #0f376f 45%, #0c2a54 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-weight: normal;
+        font-size: 0.7em;
+      }
+    }
+    .team-section__artist-list {
+      padding: 25px 0px;
+      display: flex;
+      place-content: center;
+      flex-wrap: wrap;
+      :nth-child(1) {
+        position: relative;
+        display: flex;
+        box-sizing: content-box;
+        .arrow {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          position: absolute;
+          height: 32px;
+          background: #124285;
+          bottom: 0;
+          img {
+            width: 24px;
+            margin: 0 auto;
+          }
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 46%;
+        height: 216px;
+        h3 {
+          font-size: 1.5em;
+          font-weight: normal;
+          padding: 0px 20px;
+        }
+        p {
+          font-size: 0.875em;
+          margin-top: 0px;
+          padding-left: 20px;
+        }
+      }
+      .team-section__artist-list--light {
+        background: linear-gradient(#124285 0%, #0f376f 45%, #0c2a54 100%);
+      }
+      .team-section__artist-list--dark {
+        background: linear-gradient(#0a2244 0%, #0b264b 45%, #0c2a54 100%);
+      }
+      .team-section__artist-list--mobile-hidden {
+        display: none;
+      }
+    }
+    button {
+      width: 255px;
+      height: 40px;
+      background: #0a2244;
+      border: 2px solid #2399d5;
+      font-family: proxima-nova, sans-serif;
+
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+  .footer {
+    padding-top: 35px;
+    background: linear-gradient(#124285 0%, #0f376f 45%, #0c2a54 100%);
+    display: flex;
+    flex-direction: column;
+    .footer__address {
+      text-align: center;
+      p {
+        margin: 5px 0px;
+      }
+      i {
+        padding: 0px 20px 10px 20px;
+      }
+    }
+    .footer__collaborators {
+      display: flex;
+      place-content: space-around;
+      padding-bottom: 40px;
+    }
+    .footer__button {
+      text-align: center;
+      button {
+        font-family: proxima-nova, sans-serif;
+        width: 141px;
+        height: 40px;
+        background: #c99b4f;
+        border: none;
+        font-weight: bold;
+        font-size: 0.879em;
+
+        margin: 20px auto 40px auto;
+      }
+    }
+    .footer__bottom-menu {
+      display: flex;
+      place-content: center;
+      width: 100%;
+      height: 38px;
+      background: linear-gradient(#0a2244 0%, #0b264b 45%, #0c2a54 100%);
+      ul {
+        font-size: 0.6875em;
+        display: flex;
+        list-style: none;
+        padding-left: 0px;
+        li {
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .container {
+    .header {
+      .header__content-title {
+        display: flex;
+        flex-direction: column;
+        place-content: flex-end;
+        height: 325px;
+        h1 {
+          margin: 10px 0px;
+          font-size: 2.65em;
+          font-weight: normal;
+        }
+        padding-bottom: 40px;
+      }
+      flex-direction: row;
+      .header__content-button {
+        height: 60px;
+        width: 210px;
+        top: 290px;
+        right: 6%;
+        font-family: proxima-nova, sans-serif;
+        font-size: 1.125em;
+      }
+      .header-image {
+        height: 648px;
+        width: 580px;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        place-content: center;
+        .zoom {
+          display: block;
+          cursor: pointer;
+        }
+      }
+      .header__content-info {
+        padding: 10px 30px;
+        height: 325px;
+
+        p {
+          font-size: 1.3em;
+          margin: 18px;
+        }
+      }
+      .header__content {
+        flex-grow: 1;
+        .header__content-info p:first-of-type {
+          font-size: 2em;
+        }
+        .header__content-info-flex div p:first-of-type {
+          font-size: 1.5625em;
+        }
+        .header__content-info-flex div:nth-child(1) p:first-of-type {
+          font-size: 2em;
+        }
+        .header__content-info-flex div:nth-child(2) p:first-of-type {
+          font-size: 2em;
+        }
+      }
+    }
+
+    .team-section {
+      .team-section__title {
+        height: 151px;
+        h2 {
+          font-size: 1.05em;
+        }
+      }
+
+      .team-section__artist-list {
+        div {
+          margin: 15px 10px;
+          width: 22%;
+          height: 290px;
+
+          h3 {
+            margin-left: 10%;
+
+            font-size: 2em;
+            width: 20%;
+          }
+          p {
+            margin-left: 10%;
+
+            font-size: 1em;
+          }
+        }
+        :nth-child(1) {
+          .arrow {
+            display: none;
+          }
+        }
+        :nth-child(2) {
+          h3 {
+            width: 5%;
+            margin-left: 22%;
+          }
+          p {
+            margin-left: 22%;
+          }
+          width: 32%;
+        }
+        :nth-child(5) {
+          h3 {
+            width: 5%;
+            margin-left: 100px;
+          }
+          p {
+            margin-left: 100px;
+          }
+          width: 32%;
+        }
+        .team-section__artist-list--mobile-hidden {
+          display: flex;
+          flex-direction: column;
+        }
+        .team-section__artist-list--desktop-hidden {
+          display: none;
+        }
+      }
+      button {
+        font-size: 1em;
+        height: 60px;
+        width: 270px;
+      }
+    }
+    .footer {
+      flex-wrap: wrap;
+      flex-direction: row;
+      place-content: center;
+      div {
+        width: 30%;
+      }
+      .footer__button {
+        display: flex;
+        justify-content: center;
+        button {
+          margin: 0 auto;
+        }
+      }
+      .footer__address {
+        width: 100%;
+        text-align: left;
+        p {
+          margin: 5px 0px;
+        }
+        i {
+          padding: 0px 20px 0px 0px;
+        }
+      }
+      .footer__collaborators {
+        img {
+          margin: 0px 20px;
+        }
+      }
+      .footer__button {
+        button {
+          width: 140px;
+          height: 40px;
+          background: transparent;
+          border: 2px solid #2399d5;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 25px;
+          font-size: 0.99em;
+          border: 2px solid #0090cd;
+        }
+      }
+      .footer__bottom-menu {
+        display: flex;
+        place-content: center;
+        width: 100%;
+        height: 38px;
+        background: linear-gradient(#0a2244 0%, #0b264b 45%, #0c2a54 100%);
+        ul {
+          font-size: 0.6875em;
+          display: flex;
+          list-style: none;
+          padding-left: 0px;
+          li {
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  }
+}
