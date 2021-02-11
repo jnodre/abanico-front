@@ -15,6 +15,7 @@ body {
   font-family: proxima-nova, sans-serif;
 }
 .container button {
+  font-family: proxima-nova, sans-serif;
   cursor: pointer;
   color: white;
 }
@@ -28,6 +29,9 @@ body {
 }
 .container .header img {
   width: 100%;
+}
+.container .header .header__content-title h1 {
+  font-size: 28px;
 }
 .container .header .header-image {
   background-image: url(./images/girl.jpg);
@@ -58,6 +62,7 @@ body {
   position: absolute;
   top: 440px;
   right: 12%;
+  font-size: 16px;
 }
 .container .header .header__content-title--blue {
   color: #2399d5;
@@ -65,26 +70,26 @@ body {
 .container .header .header__content-info {
   background: #0a2244;
   padding: 20px 0px 20px 27px;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 .container .header .header__content-info-flex {
   display: flex;
   flex-wrap: wrap;
 }
 .container .header .header__content-info p:first-of-type {
-  font-size: 1.715em;
+  font-size: 24px;
 }
 .container .header .header__content-info-flex div {
   flex: 0 50%;
 }
 .container .header .header__content-info-flex div p:first-of-type {
-  font-size: 1.287em;
+  font-size: 18px;
 }
 .container .header .header__content-info-flex div:nth-child(1) p:first-of-type {
-  font-size: 1.715em;
+  font-size: 24px;
 }
 .container .header .header__content-info-flex div:nth-child(2) p:first-of-type {
-  font-size: 1.715em;
+  font-size: 24px;
 }
 .container .team-section {
   background: linear-gradient(#0a1231 0%, #0a193a 45%, #092144 100%);
@@ -95,7 +100,6 @@ body {
 .container .team-section .team-section__title {
   width: 100%;
   height: 90px;
-  font-size: 2.5em;
   text-align: center;
   background: linear-gradient(#124285 0%, #0f376f 45%, #0c2a54 100%);
   display: flex;
@@ -104,7 +108,7 @@ body {
 }
 .container .team-section .team-section__title h2 {
   font-weight: normal;
-  font-size: 0.7em;
+  font-size: 28px;
 }
 .container .team-section .team-section__artist-list {
   padding: 25px 0px;
@@ -137,12 +141,12 @@ body {
   height: 216px;
 }
 .container .team-section .team-section__artist-list div h3 {
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: normal;
   padding: 0px 20px;
 }
 .container .team-section .team-section__artist-list div p {
-  font-size: 0.875em;
+  font-size: 14px;
   margin-top: 0px;
   padding-left: 20px;
 }
@@ -160,8 +164,7 @@ body {
   height: 40px;
   background: #0a2244;
   border: 2px solid #2399d5;
-  font-family: proxima-nova, sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 25px;
@@ -196,7 +199,7 @@ body {
   background: #c99b4f;
   border: none;
   font-weight: bold;
-  font-size: 0.879em;
+  font-size: 15px;
   margin: 20px auto 40px auto;
 }
 .container .footer .footer__bottom-menu {
@@ -207,7 +210,7 @@ body {
   background: linear-gradient(#0a2244 0%, #0b264b 45%, #0c2a54 100%);
 }
 .container .footer .footer__bottom-menu ul {
-  font-size: 0.6875em;
+  font-size: 11px;
   display: flex;
   list-style: none;
   padding-left: 0px;
@@ -229,7 +232,7 @@ body {
   }
   .container .header .header__content-title h1 {
     margin: 10px 0px;
-    font-size: 2.65em;
+    font-size: 42px;
     font-weight: normal;
   }
   .container .header .header__content-button {
@@ -238,7 +241,7 @@ body {
     top: 290px;
     right: 6%;
     font-family: proxima-nova, sans-serif;
-    font-size: 1.125em;
+    font-size: 18px;
   }
   .container .header .header-image {
     height: 648px;
@@ -257,29 +260,29 @@ body {
     height: 325px;
   }
   .container .header .header__content-info p {
-    font-size: 1.3em;
+    font-size: 16px;
     margin: 18px;
   }
   .container .header .header__content {
     flex-grow: 1;
   }
   .container .header .header__content .header__content-info p:first-of-type {
-    font-size: 2em;
+    font-size: 32px;
   }
   .container .header .header__content .header__content-info-flex div p:first-of-type {
-    font-size: 1.5625em;
+    font-size: 25px;
   }
   .container .header .header__content .header__content-info-flex div:nth-child(1) p:first-of-type {
-    font-size: 2em;
+    font-size: 32px;
   }
   .container .header .header__content .header__content-info-flex div:nth-child(2) p:first-of-type {
-    font-size: 2em;
+    font-size: 32px;
   }
   .container .team-section .team-section__title {
     height: 151px;
   }
   .container .team-section .team-section__title h2 {
-    font-size: 1.05em;
+    font-size: 42px;
   }
   .container .team-section .team-section__artist-list div {
     margin: 15px 10px;
@@ -288,12 +291,12 @@ body {
   }
   .container .team-section .team-section__artist-list div h3 {
     margin-left: 10%;
-    font-size: 2em;
+    font-size: 32px;
     width: 20%;
   }
   .container .team-section .team-section__artist-list div p {
     margin-left: 10%;
-    font-size: 1em;
+    font-size: 16px;
   }
   .container .team-section .team-section__artist-list :nth-child(1) .arrow {
     display: none;
@@ -326,7 +329,7 @@ body {
     display: none;
   }
   .container .team-section button {
-    font-size: 1em;
+    font-size: 18px;
     height: 60px;
     width: 270px;
   }
@@ -366,7 +369,7 @@ body {
     font-weight: bold;
     text-align: center;
     margin-bottom: 25px;
-    font-size: 0.99em;
+    font-size: 16px;
     border: 2px solid #0090cd;
   }
   .container .footer .footer__bottom-menu {
@@ -377,7 +380,7 @@ body {
     background: linear-gradient(#0a2244 0%, #0b264b 45%, #0c2a54 100%);
   }
   .container .footer .footer__bottom-menu ul {
-    font-size: 0.6875em;
+    font-size: 12px;
     display: flex;
     list-style: none;
     padding-left: 0px;

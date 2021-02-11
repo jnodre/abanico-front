@@ -12,6 +12,7 @@ body {
   color: white;
   font-family: proxima-nova, sans-serif;
   button {
+    font-family: proxima-nova, sans-serif;
     cursor: pointer;
     color: white;
   }
@@ -26,6 +27,12 @@ body {
     img {
       width: 100%;
     }
+    .header__content-title {
+      h1 {
+        font-size: 28px;
+      }
+    }
+
     .header-image {
       background-image: url(./images/girl.jpg);
       background-position: top;
@@ -56,6 +63,7 @@ body {
       position: absolute;
       top: 440px;
       right: 12%;
+      font-size: 16px;
     }
 
     .header__content-title--blue {
@@ -64,26 +72,26 @@ body {
     .header__content-info {
       background: #0a2244;
       padding: 20px 0px 20px 27px;
-      font-size: 0.875em;
+      font-size: 14px;
     }
     .header__content-info-flex {
       display: flex;
       flex-wrap: wrap;
     }
     .header__content-info p:first-of-type {
-      font-size: 1.715em;
+      font-size: 24px;
     }
     .header__content-info-flex div {
       flex: 0 50%;
     }
     .header__content-info-flex div p:first-of-type {
-      font-size: 1.287em;
+      font-size: 18px;
     }
     .header__content-info-flex div:nth-child(1) p:first-of-type {
-      font-size: 1.715em;
+      font-size: 24px;
     }
     .header__content-info-flex div:nth-child(2) p:first-of-type {
-      font-size: 1.715em;
+      font-size: 24px;
     }
   }
 
@@ -95,7 +103,6 @@ body {
     .team-section__title {
       width: 100%;
       height: 90px;
-      font-size: 2.5em;
       text-align: center;
       background: linear-gradient(#124285 0%, #0f376f 45%, #0c2a54 100%);
       display: flex;
@@ -103,7 +110,7 @@ body {
       justify-content: center;
       h2 {
         font-weight: normal;
-        font-size: 0.7em;
+        font-size: 28px;
       }
     }
     .team-section__artist-list {
@@ -135,12 +142,12 @@ body {
         width: 46%;
         height: 216px;
         h3 {
-          font-size: 1.5em;
+          font-size: 24px;
           font-weight: normal;
           padding: 0px 20px;
         }
         p {
-          font-size: 0.875em;
+          font-size: 14px;
           margin-top: 0px;
           padding-left: 20px;
         }
@@ -160,9 +167,7 @@ body {
       height: 40px;
       background: #0a2244;
       border: 2px solid #2399d5;
-      font-family: proxima-nova, sans-serif;
-
-      font-size: 1em;
+      font-size: 16px;
       font-weight: bold;
       text-align: center;
       margin-bottom: 25px;
@@ -196,8 +201,7 @@ body {
         background: #c99b4f;
         border: none;
         font-weight: bold;
-        font-size: 0.879em;
-
+        font-size: 15px;
         margin: 20px auto 40px auto;
       }
     }
@@ -208,7 +212,7 @@ body {
       height: 38px;
       background: linear-gradient(#0a2244 0%, #0b264b 45%, #0c2a54 100%);
       ul {
-        font-size: 0.6875em;
+        font-size: 11px;
         display: flex;
         list-style: none;
         padding-left: 0px;
@@ -230,7 +234,7 @@ body {
         height: 325px;
         h1 {
           margin: 10px 0px;
-          font-size: 2.65em;
+          font-size: 42px;
           font-weight: normal;
         }
         padding-bottom: 40px;
@@ -242,7 +246,7 @@ body {
         top: 290px;
         right: 6%;
         font-family: proxima-nova, sans-serif;
-        font-size: 1.125em;
+        font-size: 18px;
       }
       .header-image {
         height: 648px;
@@ -261,23 +265,23 @@ body {
         height: 325px;
 
         p {
-          font-size: 1.3em;
+          font-size: 16px;
           margin: 18px;
         }
       }
       .header__content {
         flex-grow: 1;
         .header__content-info p:first-of-type {
-          font-size: 2em;
+          font-size: 32px;
         }
         .header__content-info-flex div p:first-of-type {
-          font-size: 1.5625em;
+          font-size: 25px;
         }
         .header__content-info-flex div:nth-child(1) p:first-of-type {
-          font-size: 2em;
+          font-size: 32px;
         }
         .header__content-info-flex div:nth-child(2) p:first-of-type {
-          font-size: 2em;
+          font-size: 32px;
         }
       }
     }
@@ -286,7 +290,7 @@ body {
       .team-section__title {
         height: 151px;
         h2 {
-          font-size: 1.05em;
+          font-size: 42px;
         }
       }
 
@@ -298,14 +302,12 @@ body {
 
           h3 {
             margin-left: 10%;
-
-            font-size: 2em;
+            font-size: 32px;
             width: 20%;
           }
           p {
             margin-left: 10%;
-
-            font-size: 1em;
+            font-size: 16px;
           }
         }
         :nth-child(1) {
@@ -342,7 +344,7 @@ body {
         }
       }
       button {
-        font-size: 1em;
+        font-size: 18px;
         height: 60px;
         width: 270px;
       }
@@ -385,7 +387,7 @@ body {
           font-weight: bold;
           text-align: center;
           margin-bottom: 25px;
-          font-size: 0.99em;
+          font-size: 16px;
           border: 2px solid #0090cd;
         }
       }
@@ -396,7 +398,7 @@ body {
         height: 38px;
         background: linear-gradient(#0a2244 0%, #0b264b 45%, #0c2a54 100%);
         ul {
-          font-size: 0.6875em;
+          font-size: 12px;
           display: flex;
           list-style: none;
           padding-left: 0px;
